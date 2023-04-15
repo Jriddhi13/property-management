@@ -1,26 +1,78 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Register</title>
 
-<html>
-    <head>
-        <title>Sign Up</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="container">
-            <form action="registrationServlet" method="post">
-                Full Name: 
-                <input type="text" name="fullname" />
-                Username: 
-                <input type="text" name="username" />
-                Email Address: 
-                <input type="email" name="email" />
-                Password: 
-                <input type="password" name="password" />
-                Confirm Password: 
-                <input type="password" name="cpassword" />
-                <button type="submit">Register</button>
-            </form>
-        </div>
-    </body>
+<link rel="stylesheet"
+	href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		<section class="signup">
+			<div class="container">
+				<div class="signup-content">
+					<div class="signup-form">
+						<h2 class="form-title">SIGN UP</h2>
+					
+						<form method="" action="" class="register-form"
+							id="register-form">
+                            <div class="form-group">
+								<label for="name"><i
+									class="zmdi zmdi-account material-icons-name"></i></label> <input
+									type="text" name="fullname" id="fullname" placeholder="FULL NAME" />
+							</div>
+							<div class="form-group">
+								<label for="name"><i
+									class="zmdi zmdi-account material-icons-name"></i></label> <input
+									type="text" name="username" id="username" placeholder="USERNAME" />
+							</div>
+							<div class="form-group">
+								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
+									type="email" name="email" id="email" placeholder="EMAIL" />
+							</div>
+							<div class="form-group">
+								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
+									type="password" name="pass" id="pass" placeholder="PASSWORD" />
+							</div>
+							<div class="form-group">
+								<label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+								<input type="password" name="re_pass" id="re_pass"
+									placeholder="REPEAT YOUR PASSWORD" />
+							</div>
+							<div class="form-group">
+								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
+								<input type="text" name="contact" id="contact"
+									placeholder="CONTACT" />
+							</div>
+							<div class="form-group form-button">
+								<input type="submit" name="signup" id="signup"
+									class="form-submit" value="REGISTER" />
+							</div>
+						</form>
+					</div>
+					<div class="signup-image">
+						<figure>
+							<img id="img1" src="images/signin_image.gif" alt="sing up image">
+						</figure>
+						<a href="login.jsp" class="signup-image-link">Already a Member ?</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+</body>
 </html>
